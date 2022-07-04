@@ -77,7 +77,7 @@ const Table = () => {
             <button onClick={addData}>Add Data</button>
             {data.map((data, i) => (
                 <div key={i}>
-                    {editData ?
+                    {editData && i===dataIndex ?
                         <>
                             <input value={selected.fname}  name="fname" onChange={editHandleChange}/>
                             <input value={selected.lname}  name="lname" onChange={editHandleChange}/>
